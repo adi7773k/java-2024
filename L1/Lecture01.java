@@ -1,7 +1,7 @@
 public class Lecture01{
     public static void main(String[] args){
-        int a=2;
-        a<<=7;
+        // int a=2;
+        // a<<=7;
         //a=a>>3;
         // a+=2;
         // int c=-10;
