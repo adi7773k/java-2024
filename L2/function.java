@@ -43,21 +43,21 @@ public class function
 
     
     // Reverse using temp array
-    // static void reverseArray(int[] arr)
-    // {
-    //     int[] temp= new int[arr.length];
-    //     for(int i=0; i<arr.length; i++)
-    //     {
-    //         temp[arr.length-1-i]= arr[i];
-    //     }
-    //     // display(temp);                              // we stored reverse of array in temp sucessfully
-    //     //arr=temp;                                     // shallow copy
-    //     for(int i=0;i<arr.length;i++)
-    //     {
-    //       arr[i]=temp[i];                                //deep copy
-    //     }
-    //     display(arr);
-    // }
+    static void reverseArray(int[] arr)
+    {
+        int[] temp= new int[arr.length];
+        for(int i=0; i<arr.length; i++)
+        {
+            temp[arr.length-1-i]= arr[i];
+        }
+        // display(temp);                              // we stored reverse of array in temp sucessfully
+        //arr=temp;                                     // shallow copy
+        for(int i=0;i<arr.length;i++)
+        {
+          arr[i]=temp[i];                                //deep copy
+        }
+        display(arr);
+    }
 
     // function to swap elements
     // static void swapElements(int []arr, int i, int j)
