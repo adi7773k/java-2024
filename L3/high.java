@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class low {
+public class high {
    
     // Print sorted array
     static void display(int[]arr){
@@ -16,7 +16,7 @@ public class low {
        
 
 
-    static int lowerbound(int[] arr, int target) {
+    static int upperbound(int[] arr, int target) {
         int low = 0;
         int high = arr.length - 1;
         int index = -1;
@@ -24,8 +24,8 @@ public class low {
             int mid = (low + high) / 2;
 
             if (arr[mid] == target) {
-                index=mid;
-                high=mid-1;
+                index=mid+1;
+                low=mid+1;
             } 
             else if (arr[mid] < target) {
                 low=mid+1;
@@ -43,7 +43,7 @@ public class low {
         int i=4;
          Arrays.sort(nums);
          display(nums);
-         int index = lowerbound(nums,i);
+         int index = upperbound(nums,i);
          display(index);
 
        
