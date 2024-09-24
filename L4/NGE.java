@@ -5,16 +5,16 @@ public class NGE {
         System.out.println();
     }
     
-    // static int[] createNGER(int[] arr){
-    //     int[] NGER= new int[arr.length];
-    //     int maxElement= -1;
-    //     for(int i=arr.length-1; i>=0;i--){
-    //         NGER[i]= maxElement;
-    //         if(arr[i]>maxElement)
-    //             maxElement=arr[i];
-    //     }
-    //     return NGER;
-    // }
+    static int[] createNGER(int[] arr){
+        int[] NGER= new int[arr.length];
+        int maxElement= -1;
+        for(int i=arr.length-1; i>=0;i--){
+            NGER[i]= maxElement;
+            if(arr[i]>maxElement)
+                maxElement=arr[i];
+        }
+        return NGER;
+    }
     static int[] createNGER(int[] arr){
         int[] NGEL= new int[arr.length];
         int maxElement= -1;

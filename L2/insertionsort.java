@@ -24,7 +24,7 @@ public class insertionsort {
         int[] arr= {1,6,9,8,7,2,3,5,4};
         // insertionSort(arr);
         Arrays.sort(arr);
-        System.out.println(Arrays.binarySearch(arr, 10));
+        System.out.println(Arrays.binarySearch(arr, 5));
         display(arr);
     }
 }
